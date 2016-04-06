@@ -8,63 +8,249 @@ layout: default
     <div class="usa-width-one-whole">
       <h2>Digital Acquisition Pilot</h2>
       <h5>Solving the deficiencies in digital service and product acquisitions for your agency</h5>
-      <a href="/products" class="usa-button usa-button-outline-inverse usa-button-big" id="learn-more">Learn More...</a>
+      <a href="#overview" class="usa-button usa-button-outline-inverse usa-button-big">Learn More...</a>
     </div>
   </div>
 </div>
 <div class="usa-content">
-  <section class="features">
+  <section id="overview">
     <div class="usa-grid">
-      <h1>Find the right product for your team.</h1>
-      <div class="usa-grid">
-        <div class="usa-width-one-half features-description">
-          <ul>
-            <li>
-              <h2>Explore and compare</h2>
-              <p>
-                Apps.gov features over 100 cutting-edge products to make your team more productive.
-              </p>
-            </li>
-            <br/>
-            <li>
-              <h2>Quickly evaluate a product</h2>
-              <p>
-                Each product page includes information on requirements, ATOs, and procurement options.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="home-products-list usa-width-one-half">
-          <ul class="product-logos">
-            {% assign urlList = ',' %}
-            {% for product_hash in site.data.products | limit: 46 %}{% assign product = product_hash[1] %}
-              {% if product.logo_url %}
-                {% capture compareUrl %},{{ product.logo_url }},{% endcapture %}
-                {% if urlList contains compareUrl %}{% else %}
-                  <li class="product-logo">
-                     <img src="{% if product.logo_url or product.logo %}/assets/img/product_logos/{% if product.logo_url %}{{ product.logo_url }}{% else %}{{ product.logo }}{% endif %}{% endif %}">
-                  </li>
-                  {% capture tempList %}{{ urlList }}{{ product.logo_url }},{% endcapture %}
-                  {% assign urlList = tempList %}
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-          <div class="gradient">
-          </div>
-        </div>
+      <h1>What is the Digital Acquisitions Pilot?</h1>
+      <p>The federal government spends about $80 billion on information technology (IT) contracts but doesn’t receive $80 billion worth of value. The way the government uses and buys technology has changed, but the workforce, policies, and procedures have not fully caught up with the speed of technology. The digital acquisition pilot empowers a cross-functional team of digital and acquisition experts to shift from legacy to modern-day digital acquisition practices.<br/><br/>Officially announced by the White House Office of Federal Procurement Policy (OFPP) March 2016, this fully-funded project is a 5-8 month initiative lending a team of experts from the Presidential Innovation Fellows, 18F, and US Digital Service to federal agencies to train up a cadre of digital service experts. This pilot team will provide basic training to a cross-functional team sourced from each agency and lead two digital acquisitions--one led by 18F/USDS teams (shadowed by agencies) and a second that is self directed by the agency team.</p>
+    </div>
+  </section>
+  <section id="solution">
+    <div class="usa-grid">
+      <div class="usa-width-one-whole" id="solution-title">
+        <h1>Our Solution</h1>
+        <h2>Innovative, Sustainable, IT Savings for your Agency</h2>
+      </div>
+    </div>
+    <div class="usa-grid" id="solution-row">
+      <div class="usa-width-one-third">
+        some image
+      </div>
+      <div class="usa-width-two-thirds">
+        <h3>Internal Stakeholder Design to Human-Centered Design (HCD)</h3>
+        <h4>Solutions that people love using</h4>
+        <p>A creative approach to problem solving that starts with the people you’re designing for and ends with new solutions that are tailor made to suit their needs</p>
+      </div>
+    </div>
+    <div class="usa-grid" id="solution-row">
+      <div class="usa-width-two-thirds">
+        <h3>​Waterfall-Based Development Approach to Lean and Agile Approaches</h3>
+        <h4>Acquisition meets Lean Startup</h4>
+        <p>Creating products in a Build-Measure-Learn loop, starting with a minimal viable product (MVP); leads to working smarter, not harder, validated learning, and eliminating uncertainty</p>
+      </div>
+      <div class="usa-width-one-third">
+        some image
+      </div>
+    </div>
+    <div class="usa-grid" id="solution-row">
+      <div class="usa-width-one-third">
+        some image
+      </div>
+      <div class="usa-width-two-thirds">
+        <h3>Closed Innovation to Open Innovation</h3>
+        <h4>Shifting organizational outlook towards new ideas</h4>
+        <p>A paradigm where organizations use external as well as internal ideas, and internal and external paths to market, as the organization looks to advance their technology</p>
+      </div>
+    </div>
+    <div class="usa-grid" id="solution-row">
+      <div class="usa-width-two-thirds">
+        <h3>​Large, Monolithic Contracts to Smaller, Modular Contracts</h3>
+        <h4>Improve evaluation on product requirements</h4>
+        <p>Using an agile approach to break contracts down into smaller segments ensures that products built meet required standards + offers the flexibility to change product requirements throughout development.</p>
+      </div>
+      <div class="usa-width-one-third">
+        some image
       </div>
     </div>
   </section>
-  <section class="list-product">
+  <section id="studies">
+    <div class="studies">
+      <div>test</div>
+      <div>test2 me out hard core yeah</div>
+      <!-- <div class="usa-grid">
+        <div class="usa-width-two-thirds">
+          <h3>HHS</h3>
+          <p>Acquisition innovation lab called “Buyers Club” to spread the adoption of digital acquisition practices that has resulted in a number of wins.</p>
+          <a href="" class="usa-button usa-button-outline-inverse usa-button-big">LEARN MORE</a>
+        </div>
+        <div class="usa-width-one-third">
+          some image
+        </div>
+      </div> -->
+      <!-- <div class="usa-grid">
+        <div class="usa-width-two-thirds">
+          <h3>EPA</h3>
+          <p>With the help of 18F, stood up a digital acquisition team who turned around a long-failing program in three months</p>
+          <a href="" class="usa-button usa-button-outline-inverse usa-button-big">LEARN MORE</a>
+        </div>
+        <div class="usa-width-one-third">
+          some image
+        </div>
+      </div>
+      <div class="usa-grid">
+        <div class="usa-width-two-thirds">
+          <h3>USDS</h3>
+          <p>Authored the <a href="https://playbook.cio.gov/techfar/" target="blank">TechFAR</a>, and has advised a number of agencies on how to conduct digital acquisitions</p>
+          <a href="" class="usa-button usa-button-outline-inverse usa-button-big">LEARN MORE</a>
+        </div>
+        <div class="usa-width-one-third">
+          some image
+        </div>
+      </div>
+      <div class="usa-grid">
+        <div class="usa-width-two-thirds">
+          <h3>18F</h3>
+          <p>Has delivered nearly a dozen consulting engagements resulting in the cost avoidance of hundreds of millions in tech costs.</p>
+          <a href="" class="usa-button usa-button-outline-inverse usa-button-big">LEARN MORE</a>
+        </div>
+        <div class="usa-width-one-third">
+          some image
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <section id="faq">
     <div class="usa-grid">
-      <h1>Sell to the Federal Government</h1>
-      <p>
-        Apps.gov is a marketplace serving <span id="gov-stat">4.2 million</span> federal employees. Learn
-        more about listing your product.
-      </p>
-
-      <a href="/listing" class="usa-button usa-button-outline-inverse usa-button-big">List your Product <i class="fa fa-angle-double-right"></i></a>
+      <h1>Frequently Asked Questions</h1>
+      <div class="usa-accordion-bordered">
+        <ul class="usa-unstyled-list">
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="true" aria-controls="collapsible-0">
+              What is the Digital Acquisition Pilot?
+            </button>
+            <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">
+              How much funding is there?
+            </button>
+            <div id="collapsible-1" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-2">
+              Who is funding this pilot?
+            </button>
+            <div id="collapsible-2" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-3">
+              What agencies are involved in this project?
+            </button>
+            <div id="collapsible-3" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-4">
+              What is the timeline?
+            </button>
+            <div id="collapsible-4" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-4">
+              What are some success stories?
+            </button>
+            <div id="collapsible-4" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-4">
+              How many people can be inovlved from my agency?
+            </button>
+            <div id="collapsible-4" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-4">
+              What kind of skills does my agency need to bring fro the DAP pilot?
+            </button>
+            <div id="collapsible-4" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Lorem ipsum.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-4">
+              Who do I contact for questions / press?
+            </button>
+            <div id="collapsible-4" aria-hidden="true" class="usa-accordion-content">
+              <p>
+              Please email all questions and press inquiries to <a href="mailto:dap-18f@gsa.gov">dap-18f@gsa.gov</a>.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="team">
+    <div class="usa-grid">
+      <h1>Meet the DAP Team</h1>
+      <h4>Presidential Innovation Fellows / 18F / USDS</h4>
+      <ul>
+        <li>Amy Wilson (PIF, DC)--Project Lead, One Agency POC</li>
+        <li>Bob Ballance (PIF, DC)--Architecture/Engineering Lead, One Agency POC</li>
+        <li>Clara Tsao (PIF, DC)--User Experience Lead, One Agency POC</li>
+        <li>Christopher Cairns (18F Director of Transformation, DC)--Project Co-Lead, Advisor</li>
+        <li>Duane Rollins (18F Acquisitions, DC)--Head of User Experience, Playbook and Training Lead</li>
+        <li>Victor Udoewa (18F Acquisitions, DC)--UX Co-Lead with Duane</li>
+        <li>Mark Naggar (USDS, DC)--Acquisitions Lead, Former Lead of the HHS Buyers Club, will help orchestrate and structure all acquisitions</li>
+      </ul>
+      <h4>Office of Management and Budget, Office of Federal Procurement Policy</h4>
+      <ul>
+        <li>Mathew Blum (DC)--Advisor for all things acquisitions</li>
+        <li>Curtina Smith (DC)--Metrics Lead at OFPP; has been advising us on digital acquisitions</li>
+      </ul>
+      <h4>Subject Matter Expecrts / Advisors</h4>
+      <ul>
+        <li>Dave Zvenyach (18F Acquisitions, DC)--Head of 18f Acquisitions and a Lawyer</li>
+        <li>Kathryn Edelman (Change Strategist, DC)--Deep expertise in acquisitions and change strategy</li>
+        <li>Mark Hopson (18F Acquisitions, DC)--Acquisitions Expert (formerly Census); Lawyer</li>
+        <li>Chris Goranson (Former PIF, Now 18F Change Strategy, Nashville)--Moved to 18F after his PIF-dom. Has led a number of RFP Ghostwriting</li>
+        <li>Traci Walker (USDS)--Has been doing Acquisitions Innovation for ~15 Years; Lead of the Digital Acquisitions Training Program for Contracting Officers</li>
+        <li>Jesse Taggert (18F Change Strategy, SF)--Change Strategy Leader; advises on discovery sprint and design thinking</li>
+      </ul>
+    </div>
+  </section>
+  <section id="blog">
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        insert image here
+      </div>
+      <div class="usa-width-one-half">
+        <h2>Digital Acquisitions Pilot Blog</h2>
+        <h3>Stay updated on our latest announcements!</h3>
+        <a href="" class="usa-button usa-button-outline-inverse usa-button-big">READ MORE</a>
+      </div>
     </div>
   </section>
 </div>
