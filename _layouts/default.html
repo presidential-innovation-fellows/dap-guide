@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en'">
 
+  {% include eagle.html %}
   {% include head.html %}
 
-  <body>
+  <body class="home-layout">
 
-    {% include header.html %}
+    
+    {% include disclaimer.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
 
     {% include footer.html %}
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="/designstandards/assets/js/vendor/selectivizr-min.js"></script>
+        <script src="/designstandards/assets/js/vendor/respond.js"></script>
+        <script src="/designstandards/assets/js/vendor/rem.min.js"></script>
+      <![endif]-->
+
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js"></script>
 
   </body>
 

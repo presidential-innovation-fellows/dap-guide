@@ -1,38 +1,22 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+<footer class="usa-footer usa-footer-medium usa-sans usa-background-dark" role="contentinfo">
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid-full">
+      <div class="usa-footer-logo usa-width-one-half">
+        <a href="https://presidentialinnovationfellows.gov"><img class="usa-footer-logo-img" src="/assets/img/logos/pif.png" alt="PIF Logo"></a>
+        <a href="http://www.gsa.gov"><img class="usa-footer-logo-img" src="/assets/img/logos/GSA.png" alt="GSA Logo"></a>
+            
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <address>
+          <h3 class="usa-footer-contact-heading">DAP Guide</h3>
+          <p>
+            <a href="mailto:dap-18f@gsa.gov" target="blank">dap-18f@gsa.gov</a><br/>
+            <a href="{{ baseurl }}/sitemap.xml" target="blank">sitemap</a> | <a href="http://www.gsa.gov/portal/content/116609" target="blank">privacy policy</a> | <a href="https://18f.gsa.gov/linking-policy/" target="blank">linking policy</a> | <a href="https://github.com/presidential-innovation-fellows/dap-guide" target="blank">source code</a><br/><br/>
+            A federal government website managed by the U.S. General Services Administration.<br/>1800 F Street Northwest, Washington, DC 20405<br/><br/>
+            NOTICE: The federal government doesn’t endorse, sponsor or recommend the products or services on this site or consider them to be superior to any other products or services.
+          </p>
+        </address>
       </div>
     </div>
-
   </div>
-
-</footer>
+</div>
