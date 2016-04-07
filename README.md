@@ -1,6 +1,5 @@
 [![Dependency Status](https://gemnasium.com/badges/github.com/presidential-innovation-fellows/dap-guide.svg)](https://gemnasium.com/github.com/presidential-innovation-fellows/dap-guide)
 [![security](https://hakiri.io/github/presidential-innovation-fellows/dap-guide/master.svg)](https://hakiri.io/github/presidential-innovation-fellows/dap-guide/master)
-[![Build Status](https://travis-ci.org/presidential-innovation-fellows/dap-guide.svg?branch=master)](https://travis-ci.org/presidential-innovation-fellows/dap-guide)
 [![Code Climate](https://codeclimate.com/github/presidential-innovation-fellows/dap-guide/badges/gpa.svg)](https://codeclimate.com/github/presidential-innovation-fellows/dap-guide)
 [![Test Coverage](https://codeclimate.com/github/presidential-innovation-fellows/dap-guide/badges/coverage.svg)](https://codeclimate.com/github/presidential-innovation-fellows/dap-guide/coverage)
 [![Issue Count](https://codeclimate.com/github/presidential-innovation-fellows/dap-guide/badges/issue_count.svg)](https://codeclimate.com/github/presidential-innovation-fellows/dap-guide)
