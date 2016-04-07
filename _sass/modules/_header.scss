@@ -28,65 +28,24 @@
   @include clearfix;
   padding-top: 1.5em;
 
-  button {
-
-    &[type="submit"] {
-      margin: 0;
-    }
-  }
-
-  h1{
-    display:inline;
-    float:left;
-    font-family:$font-sans;
-    font-size: 2em;
-    line-height: 0.7em;
-    margin: 0;
-  }
-
-  p{
-    display:inline;
-  }
-
-  .search-products {
-    margin-left: 0;
-    @media screen and (max-width: 400px) {
-      width:155px;
-    }
-  }
-
-  .usa-button-gray,
-  .usa-button-outline-inverse {
-    color: $color-white;
-    float: right;
-    margin-bottom: 0;
-    margin-top: 0;
-
-    &:visited {
-      color: $color-white;
-    }
-  }
-
   ul{
-    float:right;
     color:#fff;
-    display:inline;
-    margin-bottom: 0;
+    margin: 0 auto;
 
     li{
       float: left;
-      margin: 0;
+      margin: 0 auto;
+      width: 135px;
 
       &:before{
         content:"";
       }
 
-      button{
-        margin-top:0px;
-      }
-
-      form{
-        margin-top:2px;
+      a{
+        color:$color-white;
+        &:visited{
+          color:$color-white;
+        }
       }
     }
   }
