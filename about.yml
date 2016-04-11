@@ -23,7 +23,7 @@ owner_type: project
 stage: alpha
 
 # Description of the project
-description:
+description: some text here
 
 # Tags that describe the project or aspects of the project
 tags:
@@ -68,7 +68,7 @@ stack:
 - jekyll
 
 # Brief description of the project's outcomes
-impact: The marketplace will help inform contracting and security policy
+impact: some text
 
 # Services used to supply project status information
 # Items:
@@ -134,4 +134,4 @@ licenses:
 #   text: Anchor text for the link
 contact:
 - url: mailto:dap-guide@gsa.gov
-  text: Andrew Stroup
+  text: Clara Tsao
