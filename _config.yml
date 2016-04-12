@@ -29,3 +29,4 @@ exclude:
   - system-security-plan.yml
   - Gemfile
   - Gemfile.lock
+  - node_modules
