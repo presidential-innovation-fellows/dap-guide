@@ -27,8 +27,7 @@ description: The digital acquisition pilot empowers a cross-functional team of d
 
 # Tags that describe the project or aspects of the project
 tags:
-- Digitalacquisitonpilot
--DAPilot
+- DAP
 
 # Should this repo have automated tests? If so, set to `true`. (required)
 # values: true, false

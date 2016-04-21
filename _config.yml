@@ -8,8 +8,7 @@
 # Site settings
 title: Digital Acquisition Pilot Guide
 email: dap-18f@gsa.gov
-description: > # this means to ignore newlines until "baseurl:"
-The Digital Acquisition Pilot is a fully-funded project lends a team of experts from the Presidential Innovation Fellows, 18F, and US Digital Service to an agency to train up a cadre of digital service experts.
+description: "The Digital Acquisition Pilot is a fully-funded project lends a team of experts from the Presidential Innovation Fellows, 18F, and US Digital Service to an agency to train up a cadre of digital service experts."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dap-guide.pif.gov" # the base hostname & protocol for your site
 twitter_username: innovfellows
